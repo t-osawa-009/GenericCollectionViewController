@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class GenericCollectionViewController<T, Cell: UICollectionViewCell>: UICollectionViewController {
+class GenericCollectionViewController<Item, Cell: UICollectionViewCell>: UICollectionViewController {
     // MARK: - internal
-    var items: [T]
-    var configure: (Cell, T) -> Void
-    var selectHandler: (T) -> Void
+    var items: [Item]
+    var configure: (Cell, Item) -> Void
+    var selectHandler: (Item) -> Void
 
     // MARK: - initializer
     @available(*, unavailable)
@@ -21,7 +21,7 @@ class GenericCollectionViewController<T, Cell: UICollectionViewCell>: UICollecti
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(collectionViewLayout: UICollectionViewLayout, items: [T], configure: @escaping (Cell, T) -> Void, selectHandler: @escaping (T) -> Void) {
+    init(collectionViewLayout: UICollectionViewLayout, items: [Item], configure: @escaping (Cell, Item) -> Void, selectHandler: @escaping (Item) -> Void) {
         self.items = items
         self.configure = configure
         self.selectHandler = selectHandler

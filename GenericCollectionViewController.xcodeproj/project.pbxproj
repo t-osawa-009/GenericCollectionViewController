@@ -13,6 +13,7 @@
 		1799CC5621FF51A500E86C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1799CC5521FF51A500E86C1D /* Assets.xcassets */; };
 		1799CC5921FF51A500E86C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1799CC5721FF51A500E86C1D /* LaunchScreen.storyboard */; };
 		1799CC6121FF51D700E86C1D /* GenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1799CC6021FF51D700E86C1D /* GenericCollectionViewController.swift */; };
+		1799CC6321FF58CB00E86C1D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1799CC6221FF58CB00E86C1D /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1799CC5821FF51A500E86C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1799CC5A21FF51A500E86C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1799CC6021FF51D700E86C1D /* GenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewController.swift; sourceTree = "<group>"; };
+		1799CC6221FF58CB00E86C1D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				1799CC4E21FF51A300E86C1D /* AppDelegate.swift */,
 				1799CC6021FF51D700E86C1D /* GenericCollectionViewController.swift */,
+				1799CC6221FF58CB00E86C1D /* CollectionViewCell.swift */,
 				1799CC5021FF51A300E86C1D /* ViewController.swift */,
 				1799CC5221FF51A300E86C1D /* Main.storyboard */,
 				1799CC5521FF51A500E86C1D /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 			files = (
 				1799CC5121FF51A300E86C1D /* ViewController.swift in Sources */,
 				1799CC6121FF51D700E86C1D /* GenericCollectionViewController.swift in Sources */,
+				1799CC6321FF58CB00E86C1D /* CollectionViewCell.swift in Sources */,
 				1799CC4F21FF51A300E86C1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

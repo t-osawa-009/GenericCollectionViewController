@@ -16,5 +16,17 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        let collectionViewLayout = UICollectionViewFlowLayout()
+        collectionViewLayout.estimatedItemSize = CGSize(width: 1, height: 1)
+        let vc = GenericCollectionViewController<String, CollectionViewCell>(collectionViewLayout: collectionViewLayout, items: ["hoge", "hoge2", "hoge3\nhoge3"], configure: { (cell, item) in
+            cell.textLabel.text = item
+            cell.textLabel.numberOfLines = 0
+        }) { (item) in
+            
+        }
+        vc.collectionView.backgroundColor = .white
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
